@@ -7,8 +7,10 @@
 
     class PC : public CompositeDevice {
     public:
+        PC(const char* name) : CompositeDevice(name) {}
+
         ~PC() {
-            std::for_each(list.begin(), list.end(), [](Device* device) {device} )
+            
         }
-    }
+    };
 #endif
